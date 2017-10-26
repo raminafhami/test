@@ -1,0 +1,357 @@
+
+#body{
+    padding: 0.75em;
+    font-size: 12px;
+    background-color: #34495E;
+
+}
+
+#info{
+    float: right;
+    width: 520px;
+    text-align: right;
+    background: #34495E;
+    color: #fff;
+    border-radius: .4em;
+    margin-left: 20px;
+    height: 510px;
+
+
+}
+table{
+    margin: 10px 10px 0px  20px ;
+    text-align: right;
+    min-width: 300px;
+    background: #34495E;
+    color: #fff;
+    border-radius: .2em;
+}
+
+tr:first-child {
+    color: #b4aa59;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+td{
+    min-width: 95px;
+    float: right;
+    min-height: 45px;
+}
+
+
+a {
+    border: 1px solid #186a96;
+    background: #31a8f7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2d6991), to(#31a8f7));
+    background: -webkit-linear-gradient(top, #2d6991, #31a8f7);
+    background: -moz-linear-gradient(top, #2d6991, #31a8f7);
+    background: -ms-linear-gradient(top, #2d6991, #31a8f7);
+    background: -o-linear-gradient(top, #2d6991, #31a8f7);
+    padding: 0px 18px 3px 18px;
+    border-radius: 3px;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #d9e01d;
+    text-decoration: none;
+    vertical-align: middle;
+}
+a:hover {
+    border-top-color: #28597a;
+    background: #28597a;
+    color: #e8e8e8;
+    cursor: pointer;
+}
+a:active {
+    border-top-color: #6b7808;
+    background: #6b7808;
+}
+
+
+p{
+    margin: 0px;
+}
+
+.container{
+    float: right;
+    background-color: #34495E;
+    margin: auto;
+    box-shadow: 0 0 0 5px rgba(185,185,185,.25);
+    position: relative;
+
+
+
+}
+.container div div {
+    width: 55px;
+    height: 55px;
+    padding: 3px;
+    background-color: darkgray;
+    border: 4px solid gray;
+    float: left;
+    border-collapse: collapse;
+    box-shadow: inset 0 0 0 7px rgba(255,255,255,.5);
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow:
+        inset 0 2px 3px rgba(255,255,255,0.3),
+        inset 0 -2px 3px rgba(0,0,0,0.3),
+        0 1px 1px rgba(255,255,255,0.9);
+    border-radius: 3px;
+    z-index: 1;
+    position: relative;
+
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#player{
+    background-color: #66afe9;
+    border-radius: 100%;
+    width: 86%;
+    height: 86%;
+
+}
+
+
+
+input{
+    text-align: right;
+    width: 80px;
+    height: 16px;
+    border: 1px solid white;
+    -webkit-box-shadow:
+        inset 0 0 2px  rgba(0,0,0,0.1),
+        0 0 5px rgba(0,0,0,0.1);
+    -moz-box-shadow:
+        inset 0 0 2px  rgba(0,0,0,0.1),
+        0 0 5px rgba(0,0,0,0.1);
+    box-shadow:
+        inset 0 0 2px  rgba(0,0,0,0.1),
+        0 0 5px rgba(0,0,0,0.1);
+    padding: 2px;
+    background: rgba(255,255,255,0.5);
+    color:  white;
+}
+
+.wait{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+#playersPiece1{
+    background-color: darkgreen;
+}
+#playersPiece2{
+    background-color: darkslateblue;
+}
+#playersPiece3{
+    background-color: saddlebrown;
+}
+#playersPiece4{
+    background-color: lightcoral;
+}
+#playersPiece5{
+    background-color: cornflowerblue;
+}
+#playersPiece6{
+    background-color: silver;
+}
+#playersPiece7{
+    background-color: navajowhite;
+}
+#playersPiece8{
+    background-color: #66afe9;
+}
+#playersPiece9{
+    background-color: darkslategrey;
+}
+#playersPiece1{
+    background-color: darkorange;
+}
+
+.dice{
+    width: 30px;
+    height: 30px;
+}
+.dice:hover{
+    cursor: pointer;
+}
+
+.cell{
+    position: relative;
+    z-index: 1;
+}
+
+.ladderAndSnake{
+    font-size: 12px;
+    position: absolute;
+    top: 11px;
+    right: 8px;
+    text-align: center;
+    line-height: 54px;
+    z-index: 1;
+}
+.playersPieceInGame{
+    border: 1px solid rgba(0,0,0,0.15);
+    transition: all 0.3s ease-out;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.5),
+        0 2px 2px rgba(0,0,0,0.3),
+        0 0 4px 1px rgba(0,0,0,0.2);
+    /* Font styles */
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255,255,255,0.7);
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 52px;
+    border-radius: 100%;
+    font-size: 13px;
+    color: #ffffff;
+    position: absolute;
+    top: 3px;
+    z-index: 1;
+    border: 3px solid gold;
+
+}
+.dem{
+    float: left;
+}
+
+.winner{
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    font-weight: 600;
+    margin-top: 80px;
+}
+.playersPiece{
+    border: 1px solid rgba(0,0,0,0.15);
+    transition: all 0.3s ease-out;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.5),
+        0 2px 2px rgba(0,0,0,0.3),
+        0 0 4px 1px rgba(0,0,0,0.2);
+    /* Font styles */
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255,255,255,0.7);
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 52px;
+    border-radius: 100%;
+    font-size: 13px;
+    color: #ffffff;
+    margin-top: 12px;
+    border: 3px solid gold;
+    z-index: 1;
+
+}
+
+.home{
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    top: 5px;
+}
+.flag{
+    position: absolute;
+    width: 140%;
+    height: 140%;
+    bottom: 5px;
+    right: 0px;
+}
+
+
+#snakeInGame1{
+    position: absolute;
+    top:-85px;
+    left: -270px;
+    z-index: 1;
+}
+#snakeInGame2{
+    position: absolute;
+    top:-05px;
+    left: 10px;
+    z-index: 1;
+    width: 325%;
+
+}
+#snakeInGame3{
+    position: absolute;
+    top:-10px;
+    left: -500px;
+    z-index: 1;
+    width: 690%;
+
+}
+#snakeInGame4{
+    position: absolute;
+    top:180px;
+    left: 340px;
+    z-index: 1;
+    width: 320%;
+
+}
+#ladderInGame5{
+    position: absolute;
+    top:155px;
+    left: 45px;
+    z-index: 1;
+    width: 820%;
+
+}
+#ladderInGame6{
+    position: absolute;
+    top:130px;
+    left: 350px;
+    z-index: 1;
+    width: 720%;
+
+}
+#ladderInGame7{
+    position: absolute;
+    top:-40px;
+    left: 100px;
+    z-index: 1;
+    width: 720%;
+
+}
+
+#snakeInGame8{
+    position: absolute;
+    top:470px;
+    left: -100px;
+    z-index: 1;
+    width: 420%;
+
+}
+#ladderInGame9{
+    position: absolute;
+    top:25px;
+    left: 200px;
+    z-index: 1;
+    width: 610%;
+
+}
+
+.winnermessage{
+    font-size: 50px;
+    margin-right: 150px;
+    margin-top: 75px;
+    color: #b4aa59;
+}
+.gift{
+
+    width: 60%;
+}
